@@ -1,0 +1,493 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D721D4E417E0544A009F5EED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721D4E317E0544A009F5EED /* Foundation.framework */; };
+		D721D4E617E0544A009F5EED /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721D4E517E0544A009F5EED /* CoreGraphics.framework */; };
+		D721D4E817E0544A009F5EED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721D4E717E0544A009F5EED /* UIKit.framework */; };
+		D721D4EE17E0544A009F5EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D721D4EC17E0544A009F5EED /* InfoPlist.strings */; };
+		D721D4F017E0544A009F5EED /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D721D4EF17E0544A009F5EED /* main.m */; };
+		D721D4F417E0544B009F5EED /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D721D4F317E0544B009F5EED /* AppDelegate.m */; };
+		D721D4F717E0544B009F5EED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D721D4F517E0544B009F5EED /* Main.storyboard */; };
+		D721D4FA17E0544B009F5EED /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D721D4F917E0544B009F5EED /* ViewController.m */; };
+		D721D4FC17E0544B009F5EED /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D721D4FB17E0544B009F5EED /* Images.xcassets */; };
+		D721D50317E0544B009F5EED /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721D50217E0544B009F5EED /* XCTest.framework */; };
+		D721D50417E0544B009F5EED /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721D4E317E0544A009F5EED /* Foundation.framework */; };
+		D721D50517E0544B009F5EED /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D721D4E717E0544A009F5EED /* UIKit.framework */; };
+		D721D50D17E0544B009F5EED /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D721D50B17E0544B009F5EED /* InfoPlist.strings */; };
+		D721D50F17E0544B009F5EED /* UiviewTranslations_iOS7Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = D721D50E17E0544B009F5EED /* UiviewTranslations_iOS7Tests.m */; };
+		D721D51B17E05510009F5EED /* UiviewAnimationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D721D51917E05510009F5EED /* UiviewAnimationsViewController.m */; };
+		D721D52517E06148009F5EED /* FromCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D721D52417E06148009F5EED /* FromCollection.m */; };
+		D721D52817E06171009F5EED /* ToCollection.m in Sources */ = {isa = PBXBuildFile; fileRef = D721D52717E06171009F5EED /* ToCollection.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D721D50617E0544B009F5EED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D721D4D817E0544A009F5EED /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D721D4DF17E0544A009F5EED;
+			remoteInfo = "UiviewTranslations iOS7";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D721D4E017E0544A009F5EED /* UiviewTranslations iOS7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UiviewTranslations iOS7.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D721D4E317E0544A009F5EED /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		D721D4E517E0544A009F5EED /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		D721D4E717E0544A009F5EED /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		D721D4EB17E0544A009F5EED /* UiviewTranslations iOS7-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UiviewTranslations iOS7-Info.plist"; sourceTree = "<group>"; };
+		D721D4ED17E0544A009F5EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D721D4EF17E0544A009F5EED /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D721D4F117E0544A009F5EED /* UiviewTranslations iOS7-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UiviewTranslations iOS7-Prefix.pch"; sourceTree = "<group>"; };
+		D721D4F217E0544B009F5EED /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D721D4F317E0544B009F5EED /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D721D4F617E0544B009F5EED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D721D4F817E0544B009F5EED /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D721D4F917E0544B009F5EED /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D721D4FB17E0544B009F5EED /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		D721D50117E0544B009F5EED /* UiviewTranslations iOS7Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UiviewTranslations iOS7Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D721D50217E0544B009F5EED /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		D721D50A17E0544B009F5EED /* UiviewTranslations iOS7Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UiviewTranslations iOS7Tests-Info.plist"; sourceTree = "<group>"; };
+		D721D50C17E0544B009F5EED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D721D50E17E0544B009F5EED /* UiviewTranslations_iOS7Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UiviewTranslations_iOS7Tests.m; sourceTree = "<group>"; };
+		D721D51817E05510009F5EED /* UiviewAnimationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiviewAnimationsViewController.h; sourceTree = "<group>"; };
+		D721D51917E05510009F5EED /* UiviewAnimationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiviewAnimationsViewController.m; sourceTree = "<group>"; };
+		D721D52317E06148009F5EED /* FromCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FromCollection.h; sourceTree = "<group>"; };
+		D721D52417E06148009F5EED /* FromCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FromCollection.m; sourceTree = "<group>"; };
+		D721D52617E06171009F5EED /* ToCollection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToCollection.h; sourceTree = "<group>"; };
+		D721D52717E06171009F5EED /* ToCollection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToCollection.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D721D4DD17E0544A009F5EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721D4E617E0544A009F5EED /* CoreGraphics.framework in Frameworks */,
+				D721D4E817E0544A009F5EED /* UIKit.framework in Frameworks */,
+				D721D4E417E0544A009F5EED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721D4FE17E0544B009F5EED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721D50317E0544B009F5EED /* XCTest.framework in Frameworks */,
+				D721D50517E0544B009F5EED /* UIKit.framework in Frameworks */,
+				D721D50417E0544B009F5EED /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D721D4D717E0544A009F5EED = {
+			isa = PBXGroup;
+			children = (
+				D721D4E917E0544A009F5EED /* UiviewTranslations iOS7 */,
+				D721D50817E0544B009F5EED /* UiviewTranslations iOS7Tests */,
+				D721D4E217E0544A009F5EED /* Frameworks */,
+				D721D4E117E0544A009F5EED /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D721D4E117E0544A009F5EED /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D721D4E017E0544A009F5EED /* UiviewTranslations iOS7.app */,
+				D721D50117E0544B009F5EED /* UiviewTranslations iOS7Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D721D4E217E0544A009F5EED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D721D4E317E0544A009F5EED /* Foundation.framework */,
+				D721D4E517E0544A009F5EED /* CoreGraphics.framework */,
+				D721D4E717E0544A009F5EED /* UIKit.framework */,
+				D721D50217E0544B009F5EED /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D721D4E917E0544A009F5EED /* UiviewTranslations iOS7 */ = {
+			isa = PBXGroup;
+			children = (
+				D721D4F217E0544B009F5EED /* AppDelegate.h */,
+				D721D4F317E0544B009F5EED /* AppDelegate.m */,
+				D721D4F517E0544B009F5EED /* Main.storyboard */,
+				D721D4F817E0544B009F5EED /* ViewController.h */,
+				D721D4F917E0544B009F5EED /* ViewController.m */,
+				D721D51817E05510009F5EED /* UiviewAnimationsViewController.h */,
+				D721D51917E05510009F5EED /* UiviewAnimationsViewController.m */,
+				D721D52317E06148009F5EED /* FromCollection.h */,
+				D721D52417E06148009F5EED /* FromCollection.m */,
+				D721D52617E06171009F5EED /* ToCollection.h */,
+				D721D52717E06171009F5EED /* ToCollection.m */,
+				D721D4FB17E0544B009F5EED /* Images.xcassets */,
+				D721D4EA17E0544A009F5EED /* Supporting Files */,
+			);
+			path = "UiviewTranslations iOS7";
+			sourceTree = "<group>";
+		};
+		D721D4EA17E0544A009F5EED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D721D4EB17E0544A009F5EED /* UiviewTranslations iOS7-Info.plist */,
+				D721D4EC17E0544A009F5EED /* InfoPlist.strings */,
+				D721D4EF17E0544A009F5EED /* main.m */,
+				D721D4F117E0544A009F5EED /* UiviewTranslations iOS7-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D721D50817E0544B009F5EED /* UiviewTranslations iOS7Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D721D50E17E0544B009F5EED /* UiviewTranslations_iOS7Tests.m */,
+				D721D50917E0544B009F5EED /* Supporting Files */,
+			);
+			path = "UiviewTranslations iOS7Tests";
+			sourceTree = "<group>";
+		};
+		D721D50917E0544B009F5EED /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D721D50A17E0544B009F5EED /* UiviewTranslations iOS7Tests-Info.plist */,
+				D721D50B17E0544B009F5EED /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D721D4DF17E0544A009F5EED /* UiviewTranslations iOS7 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D721D51217E0544B009F5EED /* Build configuration list for PBXNativeTarget "UiviewTranslations iOS7" */;
+			buildPhases = (
+				D721D4DC17E0544A009F5EED /* Sources */,
+				D721D4DD17E0544A009F5EED /* Frameworks */,
+				D721D4DE17E0544A009F5EED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UiviewTranslations iOS7";
+			productName = "UiviewTranslations iOS7";
+			productReference = D721D4E017E0544A009F5EED /* UiviewTranslations iOS7.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D721D50017E0544B009F5EED /* UiviewTranslations iOS7Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D721D51517E0544B009F5EED /* Build configuration list for PBXNativeTarget "UiviewTranslations iOS7Tests" */;
+			buildPhases = (
+				D721D4FD17E0544B009F5EED /* Sources */,
+				D721D4FE17E0544B009F5EED /* Frameworks */,
+				D721D4FF17E0544B009F5EED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D721D50717E0544B009F5EED /* PBXTargetDependency */,
+			);
+			name = "UiviewTranslations iOS7Tests";
+			productName = "UiviewTranslations iOS7Tests";
+			productReference = D721D50117E0544B009F5EED /* UiviewTranslations iOS7Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D721D4D817E0544A009F5EED /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Winify AG";
+				TargetAttributes = {
+					D721D50017E0544B009F5EED = {
+						TestTargetID = D721D4DF17E0544A009F5EED;
+					};
+				};
+			};
+			buildConfigurationList = D721D4DB17E0544A009F5EED /* Build configuration list for PBXProject "UiviewTranslations iOS7" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D721D4D717E0544A009F5EED;
+			productRefGroup = D721D4E117E0544A009F5EED /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D721D4DF17E0544A009F5EED /* UiviewTranslations iOS7 */,
+				D721D50017E0544B009F5EED /* UiviewTranslations iOS7Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D721D4DE17E0544A009F5EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721D4FC17E0544B009F5EED /* Images.xcassets in Resources */,
+				D721D4EE17E0544A009F5EED /* InfoPlist.strings in Resources */,
+				D721D4F717E0544B009F5EED /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721D4FF17E0544B009F5EED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721D50D17E0544B009F5EED /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D721D4DC17E0544A009F5EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721D51B17E05510009F5EED /* UiviewAnimationsViewController.m in Sources */,
+				D721D4FA17E0544B009F5EED /* ViewController.m in Sources */,
+				D721D52817E06171009F5EED /* ToCollection.m in Sources */,
+				D721D4F417E0544B009F5EED /* AppDelegate.m in Sources */,
+				D721D52517E06148009F5EED /* FromCollection.m in Sources */,
+				D721D4F017E0544A009F5EED /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D721D4FD17E0544B009F5EED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D721D50F17E0544B009F5EED /* UiviewTranslations_iOS7Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D721D50717E0544B009F5EED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D721D4DF17E0544A009F5EED /* UiviewTranslations iOS7 */;
+			targetProxy = D721D50617E0544B009F5EED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D721D4EC17E0544A009F5EED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D721D4ED17E0544A009F5EED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		D721D4F517E0544B009F5EED /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D721D4F617E0544B009F5EED /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D721D50B17E0544B009F5EED /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D721D50C17E0544B009F5EED /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D721D51017E0544B009F5EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		D721D51117E0544B009F5EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D721D51317E0544B009F5EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UiviewTranslations iOS7/UiviewTranslations iOS7-Prefix.pch";
+				INFOPLIST_FILE = "UiviewTranslations iOS7/UiviewTranslations iOS7-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		D721D51417E0544B009F5EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UiviewTranslations iOS7/UiviewTranslations iOS7-Prefix.pch";
+				INFOPLIST_FILE = "UiviewTranslations iOS7/UiviewTranslations iOS7-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		D721D51617E0544B009F5EED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UiviewTranslations iOS7.app/UiviewTranslations iOS7";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UiviewTranslations iOS7/UiviewTranslations iOS7-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "UiviewTranslations iOS7Tests/UiviewTranslations iOS7Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		D721D51717E0544B009F5EED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/UiviewTranslations iOS7.app/UiviewTranslations iOS7";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "UiviewTranslations iOS7/UiviewTranslations iOS7-Prefix.pch";
+				INFOPLIST_FILE = "UiviewTranslations iOS7Tests/UiviewTranslations iOS7Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D721D4DB17E0544A009F5EED /* Build configuration list for PBXProject "UiviewTranslations iOS7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D721D51017E0544B009F5EED /* Debug */,
+				D721D51117E0544B009F5EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D721D51217E0544B009F5EED /* Build configuration list for PBXNativeTarget "UiviewTranslations iOS7" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D721D51317E0544B009F5EED /* Debug */,
+				D721D51417E0544B009F5EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D721D51517E0544B009F5EED /* Build configuration list for PBXNativeTarget "UiviewTranslations iOS7Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D721D51617E0544B009F5EED /* Debug */,
+				D721D51717E0544B009F5EED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D721D4D817E0544A009F5EED /* Project object */;
+}
