@@ -10,7 +10,6 @@
 #import "ViewController.h"
 
 @interface UiviewAnimationsViewController ()
-
 @end
 
 @implementation UiviewAnimationsViewController
@@ -18,10 +17,7 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self)
-    {
-        
-    }
+    if (self) { }
     return self;
 }
 
@@ -29,12 +25,6 @@
 {
     [super viewDidLoad];
 }
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-}
-
 
 - (IBAction)springAnimation:(id)sender
 {
@@ -45,7 +35,6 @@
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
                          
-                         
                          _itemA.frame = CGRectMake(self.itemA.frame.origin.x,self.itemA.frame.origin.y, 100, 100);
                          _itemB.frame = CGRectMake(self.itemB.frame.origin.x,self.itemB.frame.origin.y, 50, 50);
                          _itemC.frame = CGRectMake(self.itemC.frame.origin.x,self.itemC.frame.origin.y, 25, 25);
@@ -54,10 +43,7 @@
                          _itemC.center = CGPointMake(320/2, 150);
                          
                          
-                     } completion:^(BOOL finished)
-     {
-         
-     }];
+                     } completion:^(BOOL finished) { }];
 }
 
 - (IBAction)keyframeAnimation:(id)sender
@@ -75,7 +61,6 @@
             
         }];
         
-        
         [UIView addKeyframeWithRelativeStartTime:0.5 relativeDuration:0.5 animations:^{
             
             _itemA.center = CGPointMake(50, 200);
@@ -84,24 +69,19 @@
             
         }];
         
-        
-    } completion:^(BOOL finished) {
-        
-        
-        
-    }];
+    } completion:^(BOOL finished) { }];
 }
+
+
 - (IBAction)addLabel:(id)sender
 {
-    
-    for (UILabel *label in [_itemC subviews])
-    {
+    for (UILabel *label in [_itemC subviews])  {
         [label removeFromSuperview];
         return;
     }
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(10, 10, 100, 20)];
-    label.text = @"Imone";
+    label.text = @"iOS7";
     [_itemC addSubview:label];
     
 }
@@ -109,7 +89,6 @@
 - (IBAction)keframe2Animation:(id)sender
 {
     [UIView animateKeyframesWithDuration:2 delay:0 options:UIViewKeyframeAnimationOptionCalculationModeCubicPaced animations:^{
-        
         
         [UIView addKeyframeWithRelativeStartTime:0 relativeDuration:0.5 animations:^{
             
@@ -131,27 +110,17 @@
             
         }];
         
-        
-    } completion:^(BOOL finished) {
-        
-    }];
+    } completion:^(BOOL finished) {  }];
 }
 
 - (IBAction)close:(id)sender
 {
-    
-    if (self.backAnimation)
-    {
+    if (self.backAnimation) {
        [self setTransitioningDelegate:self];
         self.backAnimation = NO;
     }
     
-    
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-        
-        
-    }];
+    [self dismissViewControllerAnimated:YES completion:^{ }];
 }
 
 
@@ -166,18 +135,11 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    
-    // This is like a temporary view where the animations during the transition will be performed
     UIView *inView = [transitionContext containerView];
-    
-    // From and To VCs
-    UiviewAnimationsViewController *fromVC = (UiviewAnimationsViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey]; // Should be quals to self
+    UiviewAnimationsViewController *fromVC = (UiviewAnimationsViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     ViewController *toVC = (ViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
-    // Add the To VC.view to the temporary view
     [inView addSubview:toVC.view];
-    
-    // Perform any configurations needed before the transition starts
     toVC.view.frame = CGRectMake(-320,0, 320, 480);
     fromVC.view.frame = CGRectMake(0, 0, 320, 480);
     
@@ -207,7 +169,12 @@
          [transitionContext completeTransition:YES];
          
      }];
-    
+}
+
+
+- (void)didReceiveMemoryWarning
+{
+    [super didReceiveMemoryWarning];
 }
 
 @end

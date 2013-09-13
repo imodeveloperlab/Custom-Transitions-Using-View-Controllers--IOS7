@@ -37,7 +37,6 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="controllerToControllerTransitoon:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="kK3-Xm-zka"/>
                                     <segue destination="0Tw-1z-u5p" kind="modal" id="rtu-zx-YnH"/>
                                 </connections>
                             </button>
@@ -222,7 +221,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zWw-V3-xSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="615" y="-134"/>
+            <point key="canvasLocation" x="324" y="-169"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

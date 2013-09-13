@@ -10,7 +10,6 @@
 #import "ToCollection.h"
 
 @interface FromCollection ()
-
 @end
 
 @implementation FromCollection
@@ -18,29 +17,23 @@
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
+    if (self) { }
     return self;
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view.
-
-
 }
+
 - (IBAction)back:(id)sender
 {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    [self dismissViewControllerAnimated:YES completion:^{ }];
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
 {
-    return 200;
+    return 100;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
@@ -53,16 +46,13 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     ToCollection *vc = (ToCollection*)segue.destinationViewController;
-        vc.useLayoutToLayoutNavigationTransitions = YES;
-  
+    vc.useLayoutToLayoutNavigationTransitions = YES;
 }
-
 
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end

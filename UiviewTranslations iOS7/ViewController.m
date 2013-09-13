@@ -26,7 +26,6 @@
 {
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     UiviewAnimationsViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@"UiviewAnimationsViewController"];
-   
     vc.backAnimation = YES;
     vc.modalPresentationStyle = UIModalPresentationCustom;
     [vc setTransitioningDelegate:self];
@@ -40,7 +39,6 @@
     return self;
 }
 
-
 - (NSTimeInterval)transitionDuration:(id <UIViewControllerContextTransitioning>)transitionContext
 {
     return 40;
@@ -48,24 +46,16 @@
 
 - (void)animateTransition:(id <UIViewControllerContextTransitioning>)transitionContext
 {
-    
-    // This is like a temporary view where the animations during the transition will be performed
     UIView *inView = [transitionContext containerView];
+    ViewController *fromVC = (ViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
     
-    // From and To VCs
-    ViewController *fromVC = (ViewController *)[transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey]; // Should be quals to self
     UiviewAnimationsViewController *toVC = (UiviewAnimationsViewController *)[transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
     
-    // Add the To VC.view to the temporary view
     [inView addSubview:toVC.view];
-    
-    // Perform any configurations needed before the transition starts
     toVC.view.frame = CGRectMake(320,-320, 320, 480);
     fromVC.view.frame = CGRectMake(0, 0, 320, 480);
-    
     [inView addSubview:fromVC.transportedView];
     [inView bringSubviewToFront:fromVC.transportedView];
-    
 
     [UIView animateWithDuration:0.7f
                           delay:0
@@ -73,7 +63,6 @@
           initialSpringVelocity:1.0
                         options:UIViewAnimationOptionCurveEaseIn
                      animations:^{
-                         
                          
                          fromVC.transportedView.frame = CGRectMake(100, 180, 120, 100);
                          fromVC.view.frame = CGRectMake(-320, 0, 320, 480);
@@ -86,24 +75,9 @@
      {
          
          [toVC.view addSubview:fromVC.transportedView];
-         
          toVC.itemC = fromVC.transportedView;
          [transitionContext completeTransition:YES];
-         
-      
-         
      }];
-    
-}
-
-- (void)viewWillAppear:(BOOL)animated
-{
-
-}
-
-- (IBAction)controllerToControllerTransitoon:(id)sender
-{
-    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
@@ -118,7 +92,6 @@
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
