@@ -10,4 +10,4 @@ iOS 7 Transitions
 <li>Canceling and coordinating transitions</li>
 </ul>
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/K-sR8BgSPiQ" frameborder="0" allowfullscreen></iframe>
+<img src='https://www.dropbox.com/s/oxpitnmssy9qjwo/iOS%20Simulator%20Screen%20shot%20Sep%2013%2C%202013%2012.33.27%20PM.png'/>
