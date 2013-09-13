@@ -3,7 +3,9 @@ Custom-Transitions-Using-View-Controllers--IOS7
 
 iOS 7 Transitions 
 
-• New animation tools 
-• Custom view controller transitions 
-• Interactive view controller transitions 
-• Canceling and coordinating transitions
+<ul>
+<li>New animation tools</li>
+<li>Custom view controller transitions</li>
+<li>Interactive view controller transitions</li>
+<li>Canceling and coordinating transitions</li>
+</ul>
